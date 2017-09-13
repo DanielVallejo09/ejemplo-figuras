@@ -7,7 +7,7 @@
  * 
  */
 
-public class Figura
+abstract public class Figura
 {
    
     protected float area;
@@ -25,12 +25,8 @@ public class Figura
     /**
      * calcula el area de la figuta
      */
-    
-    
-    public void calcularArea()
-    {
-         System.out.println("No se de que figura se trata");
-    }
+    abstract public void calcularArea();
+   
     
     public void imprimirArea()
     {
