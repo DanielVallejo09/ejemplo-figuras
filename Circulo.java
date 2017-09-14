@@ -8,8 +8,9 @@ public class Circulo extends Figura
     private float radio;
     
     
-    public Circulo(float unRadio)
+    public Circulo(int x, int y ,float unRadio)
     {
+        super (x,y); //tiene que ser siempre la primera instruccion del const
         radio = unRadio;
     }
     
@@ -23,5 +24,11 @@ public class Circulo extends Figura
     public void calculaPerimetro()
     {
         perimetro = 2*3.14F*radio;
+    }  
+    
+    public void imprime()
+    {
+        System.out.println("circulo en las posicion x = " + super.dimeX());
+        System.out.println("circulo en las posicion y = " + super.dimeY());
     }
 }

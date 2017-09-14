@@ -4,11 +4,11 @@ public class triangulo extends Figura
     private float altura;
     
     
-    public triangulo(float iniBase, float iniAltura)
+    public triangulo(int x, int y,float iniBase, float iniAltura)
     {
+        super (x,y);
         base = iniBase;
         altura = iniAltura;
-      
     }
     
     @Override

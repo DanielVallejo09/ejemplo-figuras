@@ -2,8 +2,9 @@ public class cuadrado extends Figura
 {
     private float lado;
     
-    public cuadrado(float iniLado)
+    public cuadrado(int x, int y,float iniLado)
     {
+        super (x,y);
         lado = iniLado;
     }
     

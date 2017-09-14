@@ -12,14 +12,18 @@ abstract public class Figura
    
     protected float area;
     protected float perimetro;
+    private int posx; //posicion en x
+    private int posy; //posicion en y
     
     /**
      * constructor de la clase figura
      */
-    public Figura()
+    public Figura(int x, int y)
     {
         area = 0;
         perimetro = 0;
+        posx = x;
+        posy = y;
     }
     
     /**
@@ -36,6 +40,16 @@ abstract public class Figura
     public void calculaPerimetro()
     {
         System.out.println("El perimetro de la figura es:" + perimetro);
+    }
+    
+      public int dimeX()
+    {
+        return posx;
+    }
+    
+     public int dimeY()
+    {
+        return posy;
     }
 
 }
