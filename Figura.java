@@ -51,5 +51,12 @@ abstract public class Figura
     {
         return posy;
     }
+    
+    @Override
+    public String toString()
+    {
+        String Informacion = "Area:" + area; 
+        return Informacion;
+    }
 
 }

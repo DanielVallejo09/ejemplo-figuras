@@ -24,4 +24,11 @@ public class triangulo extends Figura
        
           perimetro = 3 * base; 
     }
+    
+    @Override
+    public String toString()
+    {
+        String info = "base:" + base;
+        return info;
+    }
 }

@@ -19,4 +19,11 @@ public class cuadrado extends Figura
     {
         perimetro = lado * 4;
     }
+    
+    @Override
+    public String toString()
+    {
+        String info = "lado:" + lado;
+        return info;
+    }
 }

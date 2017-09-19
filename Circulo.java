@@ -31,4 +31,12 @@ public class Circulo extends Figura
         System.out.println("circulo en las posicion x = " + super.dimeX());
         System.out.println("circulo en las posicion y = " + super.dimeY());
     }
+    
+    @Override
+    public String toString()
+    {
+        String info = "radio:" + radio;
+        info += super.toString();
+        return info;
+    }
 }
